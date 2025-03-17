@@ -4,7 +4,7 @@
 
 运算指令：add sub and or slt addi；访存指令：lw sw；分支指令：j beq；共10条。
 
-本次实验的代码仓库位于[Arch-2024Spring](https://github.com/JoyBoy-Su/Arch-2024Spring)的lab1分支，在开始本次实验前，建议使用以下指令创建新的分支进行开发，避免破坏实验环境：
+本次实验的代码仓库位于[Arch-2025Spring](https://github.com/bw-S0L/Arch-2025Spring)的lab1分支，在开始本次实验前，建议使用以下指令创建新的分支进行开发，避免破坏实验环境：
 
 ```shell
 $ git switch lab1
@@ -142,9 +142,9 @@ synthesis => implementation => generate bitstream
 
 ## 作业提交
 
-DDL：**2024年4月9日 23：59**
+DDL：**2025年4月14日 23：59**
 
-提交内容：以学号为命名的`zip`压缩包，如`20302010043.zip`，包括`vsrc`和`report.pdf`。
+提交内容：以`学号-姓名`为命名的zip压缩包，如`20302010043-XXX.zip`，包括`vsrc`和`report.pdf`。
 
 实验报告需要包括：
 
