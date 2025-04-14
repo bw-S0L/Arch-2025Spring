@@ -59,7 +59,7 @@ synthesis => implementation => generate bitstream
 
 ## 作业提交
 
-DDL：**2024年5月7日 23：59**
+DDL：**2025年5月5日 23：59**
 
 提交内容：以学号为命名的`zip`压缩包，如`20302010043.zip`，包括`vsrc`和`report.pdf`。
 
