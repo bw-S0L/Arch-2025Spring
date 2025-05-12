@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../vsrc/include/common.sv" \
+"../../../../../vsrc/include/pipes.sv" \
+"../../../../../vsrc/mips/alu.sv" \
+"../../../../../vsrc/mips/core.sv" \
+"../../../../../vsrc/mips/decode.sv" \
+"../../../../../vsrc/mips/execute.sv" \
+"../../../../../vsrc/mips/fetch.sv" \
+"../../../../../vsrc/mips/memory.sv" \
+"../../../../../vsrc/ram.sv" \
+"../../../../../vsrc/mips/regfile.sv" \
+"../../../../../vsrc/mips/writeback.sv" \
+"../../../../../vsrc/top.sv" \
+"../../../../../vsrc/mips/FSM.sv" \
+"../../../../../vsrc/testbench/test.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

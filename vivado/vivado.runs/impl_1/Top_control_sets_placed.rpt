@@ -1,0 +1,361 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr  8 00:10:08 2024
+| Host         : win10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   294 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      8 |          256 |
+|     10 |            1 |
+|    16+ |           36 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             342 |          159 |
+| Yes          | No                    | No                     |            2110 |         1369 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1055 |          539 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  Clock Signal  |                     Enable Signal                    |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                      |                                   |                1 |              1 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_49[0]        |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_54[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_7[0]         |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_38[0]        |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_60[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_4[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_25[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_16[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_28[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_24[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_0[0]         |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_21[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_32[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_35[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_36[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_39[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_17[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_4[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_33[0]        |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_34[0]        |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_23[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_40[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_11[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_18[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_42[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_44[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_46[0]        |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_47[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_30[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_31[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_1[0]         |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_19[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_26[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/E[0]                                     |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_12[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_13[0]        |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_2[0]         |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_29[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_37[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_43[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_5[0]         |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_6[0]         |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_7[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_8[0]         |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_20[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_45[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_9[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep_1[0]     |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep_2[0]     |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep_3[0]     |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep_4[0]     |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_41[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__11_0[0] |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_10[0]        |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_27[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_15[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_3[0]         |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_38[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_14[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_22[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_17[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_2[0]     |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_20[0]    |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_22[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_28[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_29[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_30[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__7_4[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_0[0]     |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_38[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_35[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_14[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_25[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_15[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_33[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__7_3[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_36[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_41[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_43[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_24[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_32[0]    |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_44[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_37[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_18[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_4[0]     |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_45[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__3_4[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__11_3[0] |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__11_4[0] |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_19[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_23[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_27[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_31[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__3_0[0]  |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_1[0]     |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_11[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_39[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_46[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_12[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_48[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_49[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_26[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_34[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_21[0]    |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_3[0]     |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_10[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_40[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__7_0[0]  |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_47[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_50[0]    |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_52[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_53[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_54[0]    |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_51[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_42[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_55[0]    |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_56[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_5[0]     |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__3_2[0]  |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_13[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__11_2[0] |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_16[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__3_3[0]  |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][0]_rep__7_2[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__4_2[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_64[0]    |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_63[0]    |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][3]_rep__3_2[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_2[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__8_2[0]  |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_62[0]    |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__0_1[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__12_0[0] |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_65[0]    |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__4_3[0]  |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][3]_rep__3_0[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_61[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_7[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_59[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_1[0]  |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_6[0]     |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_8[0]     |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__12_4[0] |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__4_0[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__8_0[0]  |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_57[0]    |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__12_2[0] |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__8_3[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][3]_rep__3_1[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][3]_rep__3_3[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_3[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_9[0]     |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_7[0]     |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_58[0]    |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_4[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_60[0]    |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__4_4[0]  |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_5[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep_66[0]    |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__12_3[0] |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][1]_rep__8_4[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_0[0]  |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][4]_rep__2_6[0]  |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_8[0]         |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep_3[0]     |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][5]_rep__0_1[0]  |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_10[0]        |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_rep__2_0[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_3[0]         |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_0[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_1[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_17[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_18[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_23[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_4[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_24[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_26[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_16[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_28[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_29[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][5]_rep__3_0[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_12[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_19[0]        |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_25[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_27[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][5]_rep__3_3[0]  |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_rep__0_0[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_11[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_6[0]         |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep_2[0]     |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep__0_0[0]  |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][5]_rep__3_1[0]  |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][5]_rep__3_2[0]  |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep__2_0[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep__2_2[0]  |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_13[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep_0[0]     |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_2[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_1[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_0[0]         |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_9[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_0[0]         |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep__2_1[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_10[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_15[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_7[0]         |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep_1[0]     |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_11[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_3[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_20[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_21[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_14[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_22[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_1[0]         |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][5]_rep__0_0[0]  |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_2[0]         |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_rep__1_0[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_2[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_rep_0[0]     |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][7]_5[0]         |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[alu_result][6]_rep__2_1[0]  |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_41[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_35[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_42[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_44[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_45[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_56[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_34[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_43[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_5[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_59[0]        |                                   |                2 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_36[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_50[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_55[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_32[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_57[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_8[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_62[0]        |                                   |                3 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_37[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_33[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_3[0]         |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_31[0]        |                                   |                6 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_47[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_48[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_52[0]        |                                   |                7 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_6[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_53[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_58[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_61[0]        |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_63[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_39[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_30[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_9[0]         |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_51[0]        |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_40[0]        |                                   |                8 |              8 |
+|  clk_IBUF_BUFG | core/memory/dataEreg_reg[ctl][memwrite]_46[0]        |                                   |                5 |              8 |
+|  clk_IBUF_BUFG |                                                      | reset_IBUF                        |                4 |             10 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_6[0]           | reset_IBUF                        |               15 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_24[0]          | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_1[0]           | reset_IBUF                        |               12 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_12[0]          | reset_IBUF                        |               16 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_14[0]          | reset_IBUF                        |               15 |             32 |
+|  clk_IBUF_BUFG | core/writeback/E[0]                                  | reset_IBUF                        |               21 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_22[0]          | reset_IBUF                        |               19 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_0[0]           | reset_IBUF                        |               20 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_21[0]          | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_10[0]          | reset_IBUF                        |               13 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_15[0]          | reset_IBUF                        |               19 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_23[0]          | reset_IBUF                        |               16 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_28[0]          | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_4[0]           | reset_IBUF                        |               14 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_29[0]          | reset_IBUF                        |               20 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_5[0]           | reset_IBUF                        |               19 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_17[0]          | reset_IBUF                        |               20 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_2[0]           | reset_IBUF                        |               16 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_7[0]           | reset_IBUF                        |               16 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_18[0]          | reset_IBUF                        |               14 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_8[0]           | reset_IBUF                        |               12 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_11[0]          | reset_IBUF                        |               19 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_25[0]          | reset_IBUF                        |               14 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_9[0]           | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_13[0]          | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_3[0]           | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_26[0]          | reset_IBUF                        |               13 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_27[0]          | reset_IBUF                        |               19 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_19[0]          | reset_IBUF                        |               18 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_16[0]          | reset_IBUF                        |               17 |             32 |
+|  clk_IBUF_BUFG | core/writeback/dataMreg_reg[regwrite]_20[0]          | reset_IBUF                        |               18 |             32 |
+|  clk_IBUF_BUFG | core/FSM/stat[decode_en]                             |                                   |               25 |             62 |
+|  clk_IBUF_BUFG | core/FSM/fetch_init                                  | reset_IBUF                        |               22 |             63 |
+|  clk_IBUF_BUFG |                                                      | core/FSM/stat_reg[writeback_en]_0 |               29 |             76 |
+|  clk_IBUF_BUFG |                                                      | core/FSM/stat_reg[execute_en]_0   |               59 |             93 |
+|  clk_IBUF_BUFG |                                                      | core/FSM/stat_reg[memory_en]_0    |               67 |            163 |
++----------------+------------------------------------------------------+-----------------------------------+------------------+----------------+
+
+

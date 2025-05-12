@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Test Passed.
+$finish called at time : 1170 ns : File "C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/testbench/test.sv" Line 36

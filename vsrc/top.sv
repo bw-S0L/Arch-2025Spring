@@ -2,73 +2,73 @@
 `define __TOP_SV
 
 module Top
-    (
+    import common::*;(
         input logic clk, reset,
-        output logic[1:0] result
+        output u2 result
     );
     
-    logic [31:0] srca, srcb, alu_result;
-    logic [4:0] alufunc;
-
-    logic all_passed;
+    u32 pc, instruction, data_addr;
+    word_t read_data, write_data;
+    u1 write_enable;
     
-   
-    alu alu (
-        .srca(srca),
-        .srcb(srcb),
-        .alufunc(alufunc),
-        .result(alu_result)
+    /* clock */
+    logic clk_25MHz;
+    clk_wiz_0 clk_wiz_inst (
+        .clk_in1(clk),
+        .clk_out1(clk_25MHz),
+        .reset(reset)
     );
 
-   
-   task run_test(input logic [31:0] a, input logic [31:0] b, input logic [4:0] func, 
-                  input logic [31:0] expected);
-        begin
-            srca = a;
-            srcb = b;
-            alufunc = func;
-            #10;  
+    /* instantiate a core */
+    core core(
+        .clk(clk_25MHz), .reset(reset),
+        .instr_addr(pc), .instruction(instruction),
+        .data_addr(data_addr), .write_enable(write_enable),
+        .read_data(read_data), .write_data(write_data)
+    );
 
-           
+    /* instantiate imem and dmem */
+    imem imem(
+        .pc(pc),
+        .instruction(instruction)
+    );
+    dmem dmem(
+        .clk(clk_25MHz),
+        .we(write_enable),
+        .addr(data_addr),
+        .write_data(write_data),
+        .read_data(read_data)
+    );
 
-            if (alu_result !== expected) begin
-                $display("ERROR: %0d %0d %0d = %0d (Expected: %0d)", a, func, b, alu_result, expected);
-                all_passed = 1'b0;  
-            end else begin
-                $display("PASS:  %0d %0d %0d = %0d", a, func, b, alu_result);
+    // for test
+    logic [1:0] prev_result;
+
+    always_ff @(posedge clk_25MHz) begin
+        if (reset) begin
+            result <= 2'b00;
+            prev_result <= 2'b00;
+        end 
+        else begin
+            if (prev_result == 2'b10 || prev_result == 2'b01) begin
+                result <= prev_result;
+            end 
+            else begin
+                case (pc)
+                    PC_SUCCESS: begin
+                        result <= 2'b10;
+                    end
+                    PC_FAILED1, PC_FAILED2, PC_FAILED3: begin
+                        result <= 2'b01;
+                    end
+                    default: begin
+                        result <= 2'b00;
+                    end
+                endcase
+                prev_result <= result;
             end
         end
-    endtask
-
-    initial begin
-        all_passed = 1'b1;  
-
-        // 测试用例
-        run_test(32'd10, 32'd5, 5'b00001, 32'd15);   // 10 + 5 = 15
-        run_test(32'd20, 32'd30, 5'b00001, 32'd50);  // 20 + 30 = 50
-        run_test(32'd50, 32'd20, 5'b00010, 32'd30);  // 50 - 20 = 30
-        run_test(32'd10, 32'd15, 5'b00010, -32'd5);  // 10 - 15 = -5
-        run_test(32'hFF00FF00, 32'h0F0F0F0F, 5'b00011, 32'h0F000F00);
-        run_test(32'hFF00FF00, 32'h0F0F0F0F, 5'b00100, 32'hFF0FFF0F);
-        run_test(32'd10, 32'd20, 5'b00101, 32'd1);  // 10 < 20 = 1
-        run_test(32'd30, 32'd10, 5'b00101, 32'd0);  // 30 < 10 = 0
-        run_test(-32'd5, 32'd3, 5'b00101, 32'd1);   //-5 < 3 = 1
-
-     
-       
-        if (reset) begin
-            result = 2'b00;
-        end 
-        if (all_passed) begin
-            result = 2'b10; 
-            $display("=== ALL TESTS PASSED ===");
-        end else begin
-            result = 2'b01; 
-            $display("=== SOME TESTS FAILED ===");
-        end
-        $stop;
     end
-   
+    
 endmodule
 
 `endif

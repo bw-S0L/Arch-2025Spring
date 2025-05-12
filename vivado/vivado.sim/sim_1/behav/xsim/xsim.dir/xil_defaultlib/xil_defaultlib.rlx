@@ -1,0 +1,19 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vivado/vivado.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/include/common.sv,1712479550,systemVerilog,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/include/pipes.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/FSM.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/alu.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/core.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/decode.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/execute.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/fetch.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/memory.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/regfile.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/writeback.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/ram.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/top.sv,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/include/pipes.sv,,common,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/include/pipes.sv,1712494894,systemVerilog,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/FSM.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/alu.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/core.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/decode.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/execute.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/fetch.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/memory.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/regfile.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/writeback.sv;C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/ram.sv,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/alu.sv,,pipes,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/FSM.sv,1712504380,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/testbench/test.sv,,FSM,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/alu.sv,1710318243,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/core.sv,,alu,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/core.sv,1712505107,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/decode.sv,,core,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/decode.sv,1712499385,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/execute.sv,,cal_jump_addr;decode;decoder,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/execute.sv,1712499390,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/fetch.sv,,execute,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/fetch.sv,1712505217,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/memory.sv,,fetch;pcselect,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/memory.sv,1712499404,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/ram.sv,,memory,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/regfile.sv,1710318243,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/writeback.sv,,regfile,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/writeback.sv,1712499407,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/top.sv,,writeback,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/ram.sv,1712479550,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/regfile.sv,,dmem;imem,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/testbench/test.sv,1710318243,systemVerilog,,,,TopTest,,,,,,,,
+C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/top.sv,1712479550,systemVerilog,,C:/Users/86198/Desktop/ISA/MIPS_CPU/vsrc/mips/FSM.sv,,Top,,,,,,,,
